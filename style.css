@@ -1,0 +1,546 @@
+:root {
+    --primary-color: #03da59;
+    --sub-primary-color: #00b849;
+
+    --secondary-color: #028A39;
+    --sub-secondary-color: #00692a;
+
+    --thirdary-color: #FBBF24;
+    --sub-thirdaty-color: #fadb42;
+
+    --background-color: #f6ffd5;
+    --background-sec-color: #f6ffd5;
+
+    --prod-card-background: #028A39;
+    --prod-card-selected: #00bb4b;
+
+    --text-main-color: #141516;
+}
+
+[data-theme="dark"] {
+    --primary-color: #008937;
+    --sub-primary-color: #005e26;
+
+    --secondary-color: #006c2b;
+    --sub-secondary-color: #005723;
+
+    --thirdary-color: #FBBF24;
+    --sub-thirdaty-color: #fadb42;
+
+    --background-color: #073613;
+    --background-sec-color: #004211;
+
+    --text-main-color: #ebfff7;
+}
+
+h1,
+h2,
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* MAIN --------------------------------------*/
+html,
+body {
+    text-align: center;
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+html {
+    background-color: var(--sub-secondary-color);
+}
+
+.backdrop {
+    position: absolute;
+
+    z-index: -10;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.backdrop * {
+    width: 100%;
+    height: 100%;
+}
+
+/* INVISIBLE CHECKBOX -----------------*/
+.invisible_checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+
+    z-index: 40;
+    position: relative;
+    background-color: transparent;
+
+    height: 40px;
+    aspect-ratio: 1/1;
+}
+
+/* TOGGLE CHECKBOX --------------------------------------*/
+
+.toggle_checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+
+    position: relative;
+    z-index: 40;
+    right: 5px;
+
+    width: 80px;
+    height: 40px;
+
+    border-radius: 30px;
+    background-color: var(--primary-color);
+}
+
+.toggle_checkbox::after {
+    transition: 0.2s;
+    cursor: pointer;
+
+    content: "";
+    position: absolute;
+    background-color: #F8F9FA;
+
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+
+    border-width: 3px;
+    border-radius: 30px;
+}
+
+.toggle_checkbox:checked::after {
+    transition: 0.2s;
+    transform: translateX(40px) rotate(360deg);
+}
+
+/* JUST FOR THEME-----------------------*/
+.theme_checkbox_div {
+    position: absolute;
+    right: 5px;
+}
+
+.theme_checkbox::after {
+    background-color: transparent !important;
+
+    background-image: url('assets/sprites/light-sun.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.theme_checkbox:checked::after {
+    transition: 0.2s;
+
+    background-image: url("assets/sprites/dark-moon.png");
+}
+
+/* UTIL --------------------------------------*/
+.only_mobile {
+    visibility: hidden;
+}
+
+.only_desktop {
+    visibility: hidden;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.blur {
+    transition: 0.3s;
+
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+
+    filter: blur(5px);
+}
+
+/* TOPPING ----------------------------*/
+.top_bar {
+    background: linear-gradient(var(--sub-primary-color), var(--secondary-color));
+    z-index: 5000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+}
+
+.top_mobile_actions {
+    appearance: none;
+    -webkit-appearance: none;
+    display: none;
+}
+
+.top_actions {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2px
+}
+
+.top_act_button {
+    transition: background-color 0.3s;
+    transition: border-radius 0.2s;
+
+    cursor: pointer;
+
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+    background-color: transparent;
+    color: #F8F9FA;
+
+    border-radius: 15px;
+    border-style: hidden;
+
+    width: 150px;
+    height: 55px;
+}
+
+.top_act_button:hover {
+    transition: background-color 0.2s;
+    transition: border-radius 0.2s;
+
+    background-color: var(--primary-color);
+    color: #F8F9FA;
+
+    border-radius: 4px;
+}
+
+.top_act_button:active {
+    background-color: white;
+    color: #323034;
+}
+
+/* MOBILE TOPBAR + POPUP */
+.mobile_popup_button {
+    z-index: 10002;
+    position: absolute;
+    left: 5px;
+    border-radius: 4px;
+}
+
+.mobile_popup_button::after {
+    transition: 0.2s;
+
+    content: "";
+    position: absolute;
+
+    width: 40px;
+    aspect-ratio: 1/1;
+
+    background-image: url(assets/sprites/bars-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mobile_popup_button:checked::after {
+    transition: 0.2s;
+    background-image: url(assets/sprites/close-icon.png);
+
+    transform: rotate(360deg);
+}
+
+.mobile_popup_window {
+    transition: 0.25s;
+    z-index: 10001;
+
+    position: absolute;
+    background: linear-gradient(var(--secondary-color), var(--sub-secondary-color));
+    left: -70%;
+    top: 0;
+
+    width: 65%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.mobile_popup_button:checked+.mobile_popup_window {
+    transition: 0.25s;
+
+    left: 0 !important;
+    width: 65%;
+}
+
+.mobile_popup_buttons_div {
+    position: relative;
+    top: 8%;
+
+    height: 30%;
+
+    display: flex;
+    align-items: center;
+
+    flex-basis: 35%;
+    flex-wrap: wrap;
+}
+
+/* TITLE ----------------------------*/
+.top_title_div {
+    width: 100%;
+}
+
+.top_title_img {
+    height: 100%;
+    width: clamp(0%, 90%, 35rem);
+
+    margin-top: -35px;
+}
+
+.top_phrase {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+
+    color: #ebfff7;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    margin-top: -45px;
+}
+
+/* ANIMAÇÃO DAS SETINHAS */
+@keyframes top_down_animation {
+    from {
+        padding-top: 0px;
+    }
+
+    to {
+        padding-top: 8px;
+    }
+}
+
+.top_down_pointer {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+
+    animation: top_down_animation infinite 0.3s alternate;
+
+    color: white;
+    text-shadow: 0px 0px 7px white;
+
+    -webkit-text-stroke-color: #005723;
+    -webkit-text-stroke-width: 2px;
+}
+
+/* THE SITE ITSELF : ALL THE CARDS E ETC */
+
+
+/* INFORMATION DIV = PRODUCÃO */
+.production_div {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    border-radius: 3px;
+    backdrop-filter: blur(4px);
+
+    margin-top: 63vh;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+    h1,
+    h2,
+    p {
+        color: #ffff
+    }
+}
+
+.production_ex_divs {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.production_card {
+    transition: 0.2s;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    width: 23%;
+    aspect-ratio: 1/1;
+
+    background-color: var(--prod-card-background);
+
+    border-radius: 12px;
+
+    h1 {
+        transition: 0.2s;
+        position: absolute;
+        text-align: center;
+
+        top: 39%;
+
+        width: 100%;
+        font-size: clamp(1.1rem, 1.75vw, 1.4rem);
+        white-space: nowrap;
+    }
+
+    div {
+        transition: 0.325s;
+        overflow: hidden;
+
+        width: 0%;
+        height: 0%;
+
+        display: block;
+
+        p {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    img {
+        transition: 0.35s;
+        position: absolute;
+
+        margin: 0 auto;
+
+        width: 100%;
+        aspect-ratio: 1/1;
+
+        top: 0;
+        left: 0;
+
+        opacity: 0.075;
+    }
+}
+
+.production_card:hover {
+    transition: 0.2s;
+
+    border-radius: 4px;
+    background-color: var(--prod-card-selected);
+
+    h1 {
+        transition: 0.2s;
+
+        top: 5px;
+    }
+
+    div {
+        transition: 0.325s;
+
+        width: 100%;
+        height: 60%;
+    }
+
+    img {
+        transition: 0.3s;
+        width: 18.5%;
+
+        top: 63.5%;
+
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 50%);
+
+        opacity: 1;
+    }
+}
+
+/* MOBILE / PC DISPLAY ORGANIZE */
+
+/* Show on mobile devices */
+@media (max-width: 767px) {
+    .only_mobile {
+        visibility: visible !important;
+    }
+
+    .only_desktop {
+        visibility: hidden !important;
+    }
+
+    .top_phrase {
+        font-size: 3.5vh;
+    }
+
+    /*  display: block quando estive no mobile */
+    .production_ex_divs {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+        width: 85%;
+    }
+
+    .production_card {
+        width: 70%;
+
+        h1 {
+            font-size: clamp(0rem, 0.495vw + 1rem, 1.8rem)
+        }
+    }
+
+    /* SETAS INDICANDO PARA BAIXO FICAM MAIS PRA CIMA NO MOBILE */
+    .top_down_pointer {
+        top: 70%;
+    }
+}
+
+/* Show on pc devices */
+@media (min-width: 768px) {
+    .only_mobile {
+        visibility: hidden !important;
+    }
+
+    .only_desktop {
+        visibility: visible !important;
+    }
+
+    .top_phrase {
+        font-size: 6vh;
+    }
+}

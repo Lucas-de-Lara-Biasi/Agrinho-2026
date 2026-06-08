@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<!-- SO ANOTANDO OS PROGRAMAS UTILIZADOS >> -->
+
+<!-- VS CODE = Programação -->
+<!-- BLENDER = Icones -->
+<!-- GIMP = Edição de Imagens -->
+
+
+<!--! TODO > COLOCAR GRADIENTE NA LOGO / 2: FAZER RESTO INTEIRO -->
+
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>AGRINHO 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="backdrop">
+        <div
+            style="background: url(assets/images/colorful-farm-fields-from-sunflower-wheat-rye-corn.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
+        </div>
+    </div>
+
+    <!--TOP UI FOR DESKTOP-->
+    <div id="inicio">
+        <div id="top_bar" class="top_bar">
+
+            <!--MOBILE ACTIONS POPUP-->
+            <input id="mobile_popup" type="checkbox" class="invisible_checkbox mobile_popup_button only_mobile">
+            <!--POPUP ITSELF-->
+            <div class="mobile_popup_window only_mobile">
+                <div class="mobile_popup_buttons_div">
+                    <a href="#inicio">
+                        <button class="top_act_button">INICIO</button>
+                    </a>
+                    <a href="#produção">
+                        <button class="top_act_button">PRODUÇÃO</button>
+                    </a>
+                    <a href="#ambiente">
+                        <button class="top_act_button">AMBIENTE</button>
+                    </a>
+                    <a href="#agro">
+                        <button class="top_act_button">AGRO</button>
+                    </a>
+                    <a href="#futuro">
+                        <button class="top_act_button">FUTURO</button>
+                    </a>
+                </div>
+                <img class="full_width" src="assets/images/main-logo.png"
+                    style="height: 6.35rem; width: 85%; position: absolute; bottom: 15px;">
+            </div>
+
+            <!--ACTION BUTTONS-->
+            <div class="top_actions only_desktop">
+                <a href="#inicio">
+                    <button class="top_act_button">INICIO</button>
+                </a>
+                <a href="#produção">
+                    <button class="top_act_button">PRODUÇÃO</button>
+                </a>
+                <a href="#ambiente">
+                    <button class="top_act_button">AMBIENTE</button>
+                </a>
+                <a href="#agro">
+                    <button class="top_act_button">AGRO</button>
+                </a>
+                <a href="#futuro">
+                    <button class="top_act_button">FUTURO</button>
+                </a>
+            </div>
+
+            <!--TEMA CLARO E ESCURO-->
+            <div class="theme_checkbox_div">
+                <input id="theme_checkbox" type="checkbox" class="toggle_checkbox theme_checkbox">
+            </div>
+        </div>
+        <h1 style="color: transparent;">________</h1>
+    </div>
+
+    <!--MAIN TITLE-->
+    <div class="top_title_div">
+        <img class="top_title_img" src="assets/images/main-logo.png">
+        <h1 class="top_phrase">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+
+        <h2 class="top_down_pointer">▼ ▼ ▼
+            ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+    <section id="produção" class="production_div">
+        <div style="width: 100%;" class="production_explanation">
+            <h1 style="font-size: clamp(0%, 15vw, 4rem); margin-bottom: 15px;">PRODUÇÃO</h1>
+            <h2 style="font-size: clamp(1.2rem, 2.25vw, 2rem); width: 75%; margin: 0 auto;">A produção de alimentos é
+                extremamente importante,
+                porém, caso
+                não seja feita de forma controlada e
+                correta, pode acabar prejudicando o meio ambiente de forma extremamente danosa.</h2>
+            <h2>Alguns dos resultados são:</h2>
+        </div>
+
+        <!-- EX -->
+        <div class="production_ex_divs">
+            <!-- P1 -->
+            <div class="production_card">
+                <h1>RETIRADA DESCONTROLADA</h1>
+                <img src="assets/sprites/prod-1.png">
+                <div>
+                    <p>lorem ipsum</p>
+                </div>
+            </div>
+            <!-- P2 -->
+            <div class="production_card">
+                <h1>POLUIÇÃO</h1>
+                <img src="assets/sprites/prod-2.png">
+                <div>
+                    <p>lorem ipsum</p>
+                </div>
+            </div>
+            <!-- P3 -->
+            <div class="production_card">
+                <h1>GASES NA ATMOSFERA</h1>
+                <img src="assets/sprites/prod-3.png">
+                <div>
+                    <p>lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------->
+    <section id="ambiente" style="background-color: red; width: 100%; height: 600px; margin-top: 50px;">
+    </section>
+    <!----------------------------->
+    <section id="agro" style="background-color: rgb(13, 255, 0); width: 100%; height: 600px; margin-top: 50px;">
+
+    </section>
+    <!----------------------------->
+    <section id="futuro" style="background-color: rgb(0, 94, 255); width: 100%; height: 600px; margin-top: 50px;">
+
+    </section>
+    <!----------------------------->
+    <section id="creditos" style="background-color: rgb(255, 225, 0); width: 100%; height: 300px; margin-top: 50px;">
+
+    </section>
+
+    <!-- JAVA SCRIPT LINKING -->
+    <script src="main.js"></script>
+</body>
+
+</html>
