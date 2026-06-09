@@ -6,8 +6,16 @@
 <!-- BLENDER = Icones -->
 <!-- GIMP = Edição de Imagens -->
 
+<!--! TODO:  UTILIZAR JS PARA ALGUMA COISA -->
+<!--TODO: FRASE MOTIVACIONAL QUE MUDA A CADA HORA -->
+<!--TODO: MINIGAMES PELA PAGINA? -->
 
-<!--! TODO > COLOCAR GRADIENTE NA LOGO / 2: FAZER RESTO INTEIRO -->
+<!--TODO: ALGUM BOTÃO / TITULO / TEXTO QUE TROCA DE COR AO CLICAR ( JS ) -->
+<!--TODO: UMA ABA DE CURIOSIDADES QUE MUDA AO CLICAR + JS OBVIAMENTE -->
+<!--TODO: UTILIZAR VARIAVEIS QUE LEMBRAM DE ALGO QUE O USUARIO FEZ ANTERIORMENTE -->
+<!--TODO: FAZER UM POPUP DE BOAS VINDAS (SEI LA PODE DAR PONTOS) -->
+
+<!--TODO: TEM QUE USAR O JS DE ALGUMA FORMA A FIM DE INTERAÇÃO NO SITE -->
 
 <html lang="pt-br">
 
@@ -50,9 +58,12 @@
                     <a href="#futuro">
                         <button class="top_act_button">FUTURO</button>
                     </a>
+                    <a href="#curiosidades">
+                        <button class="top_act_button">CURIOSIDADES</button>
+                    </a>
                 </div>
                 <img class="full_width" src="assets/images/main-logo.png"
-                    style="height: 6.35rem; width: 85%; position: absolute; bottom: 15px;">
+                    style="height: 6.35rem; width: 85%; position: absolute; bottom: 40px;">
             </div>
 
             <!--ACTION BUTTONS-->
@@ -72,6 +83,9 @@
                 <a href="#futuro">
                     <button class="top_act_button">FUTURO</button>
                 </a>
+                <a href="#curiosidades">
+                    <button class="top_act_button">CURIOSIDADES</button>
+                </a>
             </div>
 
             <!--TEMA CLARO E ESCURO-->
@@ -83,13 +97,15 @@
     </div>
 
     <!--MAIN TITLE-->
-    <div class="top_title_div">
-        <img class="top_title_img" src="assets/images/main-logo.png">
-        <h1 class="top_phrase">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+    <div style="height: 90vh;">
+        <div class="top_title_div">
+            <img class="top_title_img" src="assets/images/main-logo.png">
+            <h1 class="top_phrase">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
 
-        <h2 class="top_down_pointer">▼ ▼ ▼
-            ▼ ▼ ▼</h2>
+            <h2 class="top_down_pointer" style="top: 80%;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+        </div>
     </div>
+
     <!----------------------------->
     <section id="produção" class="production_div">
         <div style="width: 100%;" class="production_explanation">
@@ -107,7 +123,8 @@
             <!-- P1 -->
             <div class="production_card">
                 <h1>RETIRADA DESCONTROLADA</h1>
-                <img src="assets/sprites/prod-1.png">
+                <img class="background_img" src="assets/sprites/prod-1.png">
+                <img class="mobile_icon only_mobile" src="assets/sprites/click-finger-icon.png">
                 <div>
                     <p>lorem ipsum</p>
                 </div>
@@ -115,35 +132,249 @@
             <!-- P2 -->
             <div class="production_card">
                 <h1>POLUIÇÃO</h1>
-                <img src="assets/sprites/prod-2.png">
+                <img class="background_img" src="assets/sprites/prod-2.png">
+                <img class="mobile_icon only_mobile" src="assets/sprites/click-finger-icon.png">
                 <div>
                     <p>lorem ipsum</p>
                 </div>
             </div>
             <!-- P3 -->
             <div class="production_card">
-                <h1>GASES NA ATMOSFERA</h1>
-                <img src="assets/sprites/prod-3.png">
+                <h1>RESÍDUOS NA ATMOSFERA</h1>
+                <img class="background_img" src="assets/sprites/prod-3.png">
+                <img class="mobile_icon only_mobile" src="assets/sprites/click-finger-icon.png">
                 <div>
                     <p>lorem ipsum</p>
                 </div>
             </div>
         </div>
+        <!--SPACER DIV-->
+        <div style="height: 40px; width: 100%;"></div>
     </section>
+
     <!----------------------------->
-    <section id="ambiente" style="background-color: red; width: 100%; height: 600px; margin-top: 50px;">
-    </section>
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
     <!----------------------------->
-    <section id="agro" style="background-color: rgb(13, 255, 0); width: 100%; height: 600px; margin-top: 50px;">
+
+    <!----------------------------->
+    <section id="ambiente"
+        style="position: relative;background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <div>
+            <h1 style="font-size: clamp(0%, 10vw, 3rem); color: white;">MEIO</h1>
+            <h2 style="font-size: clamp(0%, 15vw, 4rem); margin-top: -35px; color: rgb(56, 255, 60);">AMBIENTE</h2>
+            <p
+                style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 17px;">
+                AQUI VAI UM TEXTINHO
+                FALANDO SOBRE O MEIO AMBIENTE >></p>
+        </div>
+        <!--AMBIENTE-->
+
+        <!--TODO: MEIO AMBIENTE + PRODUÇÃO DESREGULADA : "O M.A. + UMA PRODUÇÃO DESREGULADA E ABUSIVA PODE DANIFICAR O MEIO AMBIENTE"-->
+        <!--TODO: MEIO AMBIENTE + PRODUÇÃO REGULADA: "O M.A. + UMA PRODUÇÃO QUE RESPEITA O MEIO AMBIENTE GERA + SEM MACHUCAR O MACHUCAR DE FORMA ABUSIVA"-->
+        <!--TODO: PARA ISSO É NECESSÁRIO RESPEITAR, CUIDAR & REPOR O MEIO AMBIENTE DE FORMA SAUDAVEL-->
+
+        <!--TODO: 1 = UM PLANETINHA TRISTE = PRODUÇÃO EXAGERADA -->
+        <!--TODO: 2 = UM PLANETINHA + FELIZ AINDA = PRODUÇÃO REGULADA -->
+
+        <div
+            style="display: flex; align-content: center; justify-content: center; gap: 5px; width: 100%; flex-wrap: wrap; flex-basis: 100%;">
+            <!--FIRST EARTH-->
+            <div class="earth_container">
+                <div id="earth_triste" class="earth">
+                    <div class="earth_base" style="background-image: url(assets/sprites/earth/earth-sad.png);"></div>
+                    <div class="earth_deco" style="background-image: url(assets/sprites/earth/earth-stumps.png);"></div>
+                </div>
+                <div style="text-align: center;">
+                    <h1 style="font-size: clamp(0%, 7vw, 5rem); color: white;">
+                        <span style="color: #3330ff;">TERRA</span> TRISTINHA
+                    </h1>
+                    <p style="color: white;">
+                        ELA TA TRISTINHA POR CONTA DA PRODUÇÃO QUE NÃO RESPEITA ELA :((
+                    </p>
+                </div>
+            </div>
+
+            <!--SECOND EARTH-->
+            <div class="earth_container">
+                <div id="earth_feliz" class="earth">
+                    <div class="earth_base" style="background-image: url(assets/sprites/earth/earth-extra-happy.png);">
+                    </div>
+                    <div class="earth_deco" style="background-image: url(assets/sprites/earth/earth-extra.png);"></div>
+                </div>
+                <div style="text-align: center;">
+                    <h1 style="font-size: clamp(0%, 7vw, 5rem); color: white;">
+                        <span style="color: #3330ff;">TERRA</span> FELIZINHA!
+                    </h1>
+                    <p style="color: white;">
+                        ELA TA FELIZ POR QUE A PRODUÇÃO RESPEITA ELA :))
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </section>
-    <!----------------------------->
-    <section id="futuro" style="background-color: rgb(0, 94, 255); width: 100%; height: 600px; margin-top: 50px;">
 
+    <!----------------------------->
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+
+    <!----------------------------->
+    <section id="agro"
+        style="background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 60px;border-radius: 3px; backdrop-filter: blur(4px);">
+
+        <!--TITLEZINHO-->
+        <div>
+            <h2 style="font-size: clamp(0%, 15vw, 4rem); margin-top: -35px; color: rgb(56, 255, 60);">AGRO</h2>
+            <p
+                style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 17px;">
+                AQUI VAI UM TEXTINHO
+                FALANDO SOBRE O AGRO >></p>
+        </div>
+
+        <!-- PARANÁ & BRASIL-->
+        <!-- AQUI TERA UMA EXPLICAÇÃOZINHA SOBRE O AGRO NO BRASIL & PARANÁ -->
+        <!--TODO: MAPA DO BRASIL COM % DENTRO ESCRITO QUANTOS % O AGRO INFLUENCIA NA ECONOMIA DO PAIS-->
+        <!--TODO: MAPA DO PARANÁ COM % DENTRO ESCRITO QUANTOS % O AGRO INFLUENCIA NA ECONOMIA DO ESTADO-->
+        <div class="agro_maps" style="width: 100%;height: 10px;">
+            <!--FAZER UMA REPRESENTAÇÃO COM OS GRAFICOS-->
+        </div>
+
+        <!--TODO: LINKAR AS INFOS DO MAPA DO PARANÁ COM ESSE CHART >> -->
+        <!-- PRODUÇÃO PARANAENSE -->
+        <div style="width: 100%;">
+            <div>
+                <h1 style="font-size: clamp(0%, 10vw, 3rem); color: white;">CULTURAS</h1>
+                <h2 style="font-size: clamp(0%, 15vw, 4rem); margin-top: -35px; color: wheat;">AGRÍCOLAS</h2>
+                <p
+                    style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 17px;">
+                    AQUI VAI UM TEXTINHO
+                    FALANDO SOBRE AS FONTES E CULTURAS >></p>
+            </div>
+
+            <!--CULTURAS-->
+            <div class="agro_cultures_div">
+                <!--SOJA-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/images/agro-soja.jpg);"></div>
+                    <h1 class="agr_title">SOJA</h1>
+                    <h3 class="agr_percentage" style="--perc: 33.50">33,50%</h3>
+                </div>
+                <!--MILHO-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/images/agro-milho.jpg);"></div>
+                    <h1 class="agr_title">MILHO</h1>
+                    <h3 class="agr_percentage" style="--perc: 4.51">4,51%</h3>
+                </div>
+                <!--TRIGO-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/images/agro-trigo.jpg);"></div>
+                    <h1 class="agr_title">TRIGO</h1>
+                    <h3 class="agr_percentage" style="--perc: 2.58">2,58%</h3>
+                </div>
+                <!--CAFÉ-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/images/agro-cafe.jpg);"></div>
+                    <h1 class="agr_title">CAFÉ</h1>
+                    <h3 class="agr_percentage" style="--perc: 0.9">0,1%</h3>
+                </div>
+            </div>
+        </div>
+        <!--SPACER DIV-->
+        <div style="height: 40px; width: 100%;"></div>
     </section>
-    <!----------------------------->
-    <section id="creditos" style="background-color: rgb(255, 225, 0); width: 100%; height: 300px; margin-top: 50px;">
 
+    <!----------------------------->
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+
+    <!----------------------------->
+    <section id="futuro"
+        style="background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+
+        <!--TODO: DESISÕES FINAIS A SEREM TOMADAS -->
+        <!--TODO: REPOR AO MEIO AMBIENTE + RESPEITAR A FAUNA / CUIDAR DA ATMOSFERA / CUIDAR DOS RIOS / SEM PRATICAS ABUSIVAS DE RETIRADA E "MAUS TRATOS" NO MEIO AMBIENTE -->
+
+        <!--TODO: FAZER TIPO UMA TECH TREE COM ESSAS INFORMAÇÕES -->
+
+        <!--TITLEZINHO-->
+        <div>
+            <h1 style="font-size: clamp(0%, 10vw, 3rem); color: rgb(182, 244, 255);">FUTURO</h1>
+            <h2 style="font-size: clamp(0%, 15vw, 4rem); margin-top: -35px; color: rgb(56, 255, 60);">SUSTENTÁVEL</h2>
+            <p
+                style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 17px;">
+                AQUI VAI UM TEXTINHO
+                FALANDO SOBRE O FUTURO E OQUE FAZER PARA TUDO DAR CERTO! >></p>
+        </div>
+
+        <!--DIV GERAL-->
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div style="width: 75%; height: 520px; background-color: rgba(0,0,0,0.35); border-radius: 6px;">
+                <!--!TODO = CARDS INTERATIVOS COM AS FORMAS DE TER UM FUTURO SUSTENTÁVEL-->
+                <h1>CARD INTERATIVO</h1>
+                <h1>CARD INTERATIVO</h1>
+                <h1>CARD INTERATIVO</h1>
+                <h1>CARD INTERATIVO</h1>
+                <h1>CARD INTERATIVO</h1>
+            </div>
+        </div>
+
+        <!--SPACER DIV-->
+        <div style="height: 40px; width: 100%;"></div>
+    </section>
+
+    <!----------------------------->
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+
+    <!----------------------------->
+    <section id="curiosidades"
+        style="background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+
+        <!-- ISSO SO PRA INTEGRAÇÃO DO JS -->
+        <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+            <div style="width: 70%; height: 480px; background-color: rgba(0,0,0,0.35);">
+                <h1 style="font-size: clamp(1rem,4vw,3rem);   color: white;">CURIOSIDADE!</h1>
+                <p style="color: orangered;">TAL COISA ACONTECE SE VC FIZER OUTRA TAL COISA!!!!</p>
+
+                <p style="color: orange;">
+                    AQUI TERÁ UMA INTEGRAÇÃO COM O JAVASCRIPT PARA GERAR UMA CURIOSIDADE ALEATÓRIA
+                    +titulo +imagem +descrição
+                    +botão de proximo >> + botão de ultimo (saving)
+                </p>
+                <p style="color: orange;">
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------->
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+
+    <!----------------------------->
+    <section id="creditos"
+        style="background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <!--TODO: COLOCAR A LOGO DO AGRINHO NO FINAL TMB SEI LA -->
+        <!--TODO: CREBITUS / PROGRAMAS UTILIZADOS NA PRODUÇÃO DO SITE -->
+        <div style="width: 100%; height: 140px;">
+            <p style="color: orangered;">AQUI SERÃO OS CREDITOS E PROGRAMAS UTILIZADOS</p>
+        </div>
     </section>
 
     <!-- JAVA SCRIPT LINKING -->

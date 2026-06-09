@@ -345,7 +345,6 @@ html {
 
 .top_down_pointer {
     position: absolute;
-    top: 80%;
     left: 0;
     width: 100%;
     white-space: nowrap;
@@ -370,7 +369,7 @@ html {
     border-radius: 3px;
     backdrop-filter: blur(4px);
 
-    margin-top: 63vh;
+    /*margin-top: 63vh;*/
 
     width: 100%;
 
@@ -443,7 +442,12 @@ html {
         }
     }
 
-    img {
+    div * {
+        transition: 0.385s;
+        opacity: 0;
+    }
+
+    .background_img {
         transition: 0.35s;
         position: absolute;
 
@@ -455,7 +459,21 @@ html {
         top: 0;
         left: 0;
 
-        opacity: 0.075;
+        opacity: 0.1;
+    }
+
+    .mobile_icon {
+        transition: 0.1s;
+        position: absolute;
+        width: 18.5%;
+
+        top: 63.5%;
+
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 50%);
+
+        opacity: 1;
     }
 }
 
@@ -478,7 +496,12 @@ html {
         height: 60%;
     }
 
-    img {
+    div * {
+        transition: 0.385s;
+        opacity: 1;
+    }
+
+    .background_img {
         transition: 0.3s;
         width: 18.5%;
 
@@ -489,6 +512,206 @@ html {
         transform: translate(-50%, 50%);
 
         opacity: 1;
+    }
+
+    .mobile_icon {
+        transition: 0.1s;
+
+        opacity: 0;
+    }
+}
+
+/* AMBIENTE */
+@keyframes earth_spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.earth {
+    position: relative;
+    width: 530px;
+    aspect-ratio: 1/1;
+
+    .earth_base {
+        position: absolute;
+        width: 100%;
+        aspect-ratio: 1/1;
+
+        background-position: center;
+        background-size: 78%;
+        background-image: inherit;
+        background-repeat: no-repeat;
+    }
+
+    .earth_deco {
+        position: absolute;
+        width: 100%;
+        aspect-ratio: 1/1;
+
+        background-position: center;
+        background-size: cover;
+        background-image: inherit;
+        background-repeat: no-repeat;
+
+        animation: earth_spin infinite 10s linear;
+    }
+}
+
+.earth_container {
+    display: flex;
+    align-content: center;
+
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.35);
+
+    border-radius: 6px;
+}
+
+/* AGRO */
+.agro_maps {
+    .agr_percentage {
+        transition: 0.2s;
+        position: relative;
+
+        font-size: clamp(1rem, 2vw, 1.15rem);
+
+        display: inline;
+        place-content: center;
+    }
+
+    .agr_percentage::before {
+        transition: 0.2s;
+
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+
+        width: 400px;
+        aspect-ratio: 1/1;
+
+        left: 50%;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
+
+        background: conic-gradient(rgb(17, 255, 0) calc(var(--perc) * 1%), rgba(0, 0, 0, 0.4) 0);
+        mask: radial-gradient(transparent 61%, black 0);
+    }
+}
+
+.agro_cultures_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+    div {
+        position: relative;
+        width: 75%;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 175px;
+
+        display: flex;
+        align-items: center;
+
+        border-radius: 4px;
+        overflow: hidden;
+
+        .agr_title {
+            transition: 0.2s;
+            position: absolute;
+            font-size: clamp(2.5rem, 4vw, 5rem);
+
+            left: 15px;
+        }
+
+        .agr_percentage {
+            transition: 0.2s;
+            position: absolute;
+            right: 30px;
+
+            font-size: clamp(1rem, 2vw, 1.15rem);
+
+            display: inline;
+            place-content: center;
+        }
+
+        .agr_percentage::before {
+            transition: 0.2s;
+
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+
+            width: 90px;
+            aspect-ratio: 1/1;
+
+            left: 50%;
+            right: 50%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+
+            background: conic-gradient(rgb(17, 255, 0) calc(var(--perc) * 1%), rgba(0, 0, 0, 0.4) 0);
+            mask: radial-gradient(transparent 61%, black 0);
+        }
+
+        .img_b {
+            transition: 0.2s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 20;
+
+            background-image: inherit;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 100%;
+            aspect-ratio: 1/1;
+            opacity: 0.3;
+        }
+    }
+
+    div:hover {
+        .agr_title {
+            transition: 0.2s;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+        }
+
+        .agr_percentage {
+            transition: 0.2s;
+            font-size: clamp(1.215rem, 2.15vw, 1.3rem);
+
+            right: 45px;
+        }
+
+        .agr_percentage::before {
+            transition: 0.2s;
+            width: 110px;
+        }
+
+        .img_b {
+            transition: 0.2s;
+            opacity: 1;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        position: relative;
+        color: #ffff;
+        z-index: 22;
     }
 }
 
@@ -521,6 +744,38 @@ html {
 
         h1 {
             font-size: clamp(0rem, 0.495vw + 1rem, 1.8rem)
+        }
+    }
+
+
+    /*EARTHS */
+    .earth {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .earth_container {
+        display: block;
+    }
+
+    /*AGRO*/
+    .agro_cultures_div {
+        div {
+            width: 97.5%;
+            display: block;
+
+            .agr_percentage {
+                position: relative;
+                right: 0 !important;
+            }
+
+            .agr_title {
+                position: relative;
+                left: 0 !important;
+
+                top: -25px;
+            }
         }
     }
 

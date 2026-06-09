@@ -11,7 +11,7 @@ if (localStorage.getItem("theme")) {
     }
 }
 
-//Add um listener para o checkbox que muda o tema >>
+//Addc um listener para o checkbox que muda o tema >>
 theme_button.addEventListener("change", () => {
     //SE FOR CLARO MUDA PRO MODO ESCURO E VISSE VERSA
     if (theme_button.checked) {
@@ -23,3 +23,4 @@ theme_button.addEventListener("change", () => {
     document.documentElement.setAttribute('data-theme', THEME);
     localStorage.setItem("theme", THEME)
 })
+
