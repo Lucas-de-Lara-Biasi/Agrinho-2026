@@ -29,6 +29,11 @@ Utilizado para a criação dos ícones do site, todos eles foram "desenhados" em
 
 <img src="assets/imagens/creditos/gimp.png" alt="gimp" style="aspect-ratio:1/1; height: 100px">
 
+---
+
+### Confira o site por este link! >
+https://lucas-de-lara-biasi.github.io/Agrinho-2026/
+
 Utilizado para a edição de imagens, principalmente o ajuste da logo do site.
 
 ---
