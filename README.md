@@ -1,2 +1,9 @@
-# Agrinho-2026
-Repositório referente ao programa Agrinho 2026
+
+![logo](assets/imagens/main-logo.png)
+
+---
+
+### "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"
+
+---
+
