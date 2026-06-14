@@ -1,7 +1,5 @@
 
-![logo](assets/imagens/main-logo.png)
-
-<img src="assets/imagens/main-logo.png" alt="logo" style="width: 100%; height: 150px">
+<img src="assets/imagens/main-logo.png" alt="logo" style="width: 100%;">
 
 ---
 
