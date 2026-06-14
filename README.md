@@ -1,5 +1,5 @@
 
-<img src="assets/imagens/main-logo.png" alt="logo" style="width: 100%;">
+<img src="assets/imagens/main-logo.png" alt="logo" style="width: 100%; padding-bottom: -45px">
 
 ---
 
