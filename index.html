@@ -6,9 +6,6 @@
 <!-- BLENDER = Icones -->
 <!-- GIMP = Edição de Imagens -->
 
-
-<!--! TODO > COLOCAR GRADIENTE NA LOGO / 2: FAZER RESTO INTEIRO -->
-
 <html lang="pt-br">
 
 <head>
@@ -17,12 +14,13 @@
 
     <title>AGRINHO 2026</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/sprites/site_terra.ico" type="image/png">
 </head>
 
 <body>
     <div class="backdrop">
         <div
-            style="background: url(assets/images/colorful-farm-fields-from-sunflower-wheat-rye-corn.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
+            style="background: url(assets/imagens/colorful-farm-fields-from-sunflower-wheat-rye-corn.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
         </div>
     </div>
 
@@ -51,8 +49,8 @@
                         <button class="top_act_button">FUTURO</button>
                     </a>
                 </div>
-                <img class="full_width" src="assets/images/main-logo.png"
-                    style="height: 6.35rem; width: 85%; position: absolute; bottom: 15px;">
+                <img class="full_width" src="assets/imagens/main-logo.png"
+                    style="height: 7.35rem; position: absolute; bottom: 40px;">
             </div>
 
             <!--ACTION BUTTONS-->
@@ -83,67 +81,380 @@
     </div>
 
     <!--MAIN TITLE-->
-    <div class="top_title_div">
-        <img class="top_title_img" src="assets/images/main-logo.png">
-        <h1 class="top_phrase">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+    <div style="height: 90vh;">
+        <div class="top_title_div">
+            <img class="top_title_img" src="assets/imagens/main-logo.png">
+            <h1 class="top_phrase">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
 
-        <h2 class="top_down_pointer">▼ ▼ ▼
-            ▼ ▼ ▼</h2>
-    </div>
-    <!----------------------------->
-    <section id="produção" class="production_div">
-        <div style="width: 100%;" class="production_explanation">
-            <h1 style="font-size: clamp(0%, 15vw, 4rem); margin-bottom: 15px;">PRODUÇÃO</h1>
-            <h2 style="font-size: clamp(1.2rem, 2.25vw, 2rem); width: 75%; margin: 0 auto;">A produção de alimentos é
-                extremamente importante,
-                porém, caso
-                não seja feita de forma controlada e
-                correta, pode acabar prejudicando o meio ambiente de forma extremamente danosa.</h2>
-            <h2>Alguns dos resultados são:</h2>
+            <h2 class="top_down_pointer" style="top: 80%;">▼ ▼ ▼ ▼ ▼ ▼</h2>
         </div>
+    </div>
+
+    <!----------------------------->
+    <section id="produção" class="production_div"
+        style="position: relative;background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+
+        <div>
+            <h1 style="height: 45px; font-size: clamp(0%, 15vw, 6rem); color: white; margin-top: 10px;">PRODUÇÃO</h1>
+            <p class="sub-title"
+                style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 17px;">
+                A produção agrícola é um dos
+                processos que mais abrange o Brasil, ocupando boa parte do solo brasileiro, sendo extremamente rentável.
+                Porém, é preciso que haja um equilíbrio justo entre o lucro, a produção e o meio ambiente, que, caso não
+                ocorra, pode prejudicar a natureza de diversas formas.
+            </p>
+            <h2>Sendo algumas delas:</h2>
+        </div>
+
+        <div class="content_divider"></div>
 
         <!-- EX -->
         <div class="production_ex_divs">
             <!-- P1 -->
             <div class="production_card">
                 <h1>RETIRADA DESCONTROLADA</h1>
-                <img src="assets/sprites/prod-1.png">
+                <img class="background_img" src="assets/sprites/prod-1.png">
+                <div class="mobile_icon only_mobile"></div>
                 <div>
-                    <p>lorem ipsum</p>
+                    <p>A produção pode acabar gerando diversos problemas ao meio ambiente, como por exemplo, o
+                        desregulamento entre a taxa de extração e a taxa de reposição de recursos naturais, causando a
+                        destruição de florestas e a danificação do solo.</p>
                 </div>
             </div>
             <!-- P2 -->
             <div class="production_card">
                 <h1>POLUIÇÃO</h1>
-                <img src="assets/sprites/prod-2.png">
+                <img class="background_img" src="assets/sprites/prod-2.png">
+                <div class="mobile_icon only_mobile"></div>
                 <div>
-                    <p>lorem ipsum</p>
+                    <p>A poluição é normalmente um resultado do descarte incorreto de recursos químicos, como por
+                        exemplo, o descarte de defensivos agrícolas em rios, que acabam penetrando e contaminando o solo
+                        do
+                        local.</p>
                 </div>
             </div>
             <!-- P3 -->
             <div class="production_card">
-                <h1>GASES NA ATMOSFERA</h1>
-                <img src="assets/sprites/prod-3.png">
+                <h1>RESÍDUOS NA ATMOSFERA</h1>
+                <img class="background_img" src="assets/sprites/prod-3.png">
+                <div class="mobile_icon only_mobile"></div>
                 <div>
-                    <p>lorem ipsum</p>
+                    <p>Os gases resultantes da queima de combustíveis fosseis no campo, acabam subindo para a
+                        atmosfera, causando o efeito estufa, aquecimento global e poluição a atmosfera.
+                    </p>
                 </div>
             </div>
         </div>
+        <!--SPACER DIV-->
+        <div style="height: 40px; width: 100%;"></div>
     </section>
-    <!----------------------------->
-    <section id="ambiente" style="background-color: red; width: 100%; height: 600px; margin-top: 50px;">
-    </section>
-    <!----------------------------->
-    <section id="agro" style="background-color: rgb(13, 255, 0); width: 100%; height: 600px; margin-top: 50px;">
 
-    </section>
     <!----------------------------->
-    <section id="futuro" style="background-color: rgb(0, 94, 255); width: 100%; height: 600px; margin-top: 50px;">
-
-    </section>
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
     <!----------------------------->
-    <section id="creditos" style="background-color: rgb(255, 225, 0); width: 100%; height: 300px; margin-top: 50px;">
 
+    <!----------------------------->
+    <section id="ambiente"
+        style="position: relative;background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <div style="padding-top: 1px;">
+            <h1 style="height: 40px ;font-size: clamp(0%, 12vw, 4rem); color: white;">MEIO</h1>
+            <h2 style="height: 40px ;font-size: clamp(0%, 17vw, 6rem); margin-top: -35px; color: rgb(56, 255, 60);">
+                AMBIENTE</h2>
+        </div>
+
+        <div class="content_divider"></div>
+
+        <!--AMBIENTE-->
+
+        <!--TODO: MEIO AMBIENTE + PRODUÇÃO DESREGULADA : "O M.A. + UMA PRODUÇÃO DESREGULADA E ABUSIVA PODE DANIFICAR O MEIO AMBIENTE"-->
+        <!--TODO: MEIO AMBIENTE + PRODUÇÃO REGULADA: "O M.A. + UMA PRODUÇÃO QUE RESPEITA O MEIO AMBIENTE GERA + SEM MACHUCAR O MACHUCAR DE FORMA ABUSIVA"-->
+        <!--TODO: PARA ISSO É NECESSÁRIO RESPEITAR, CUIDAR & REPOR O MEIO AMBIENTE DE FORMA SAUDAVEL-->
+
+        <div
+            style="display: flex; align-content: center; justify-content: center; gap: 5px; width: 100%; flex-wrap: wrap; flex-basis: 100%;">
+            <!--FIRST EARTH-->
+            <div class="earth_container">
+                <div id="earth_triste" class="earth">
+                    <div class="earth_base" style="background-image: url(assets/sprites/earth/earth-sad.png);"></div>
+                    <div class="earth_deco" style="background-image: url(assets/sprites/earth/earth-stumps.png);"></div>
+                </div>
+                <div class="earth_info_div" style="text-align: center;">
+                    <h1 style="color: white;">
+                        <span style="color: #3330ff;">TERRA</span> TRISTE
+                    </h1>
+                    <p style="color: white; position: relative; margin: 0 auto;">
+                        Uma produção que não respeita e não cuida do meio ambiente acaba afetando o planeta inteiro,
+                        na parte da saúde, da economia e social. A poluição gera grandes problemas para todos os seres
+                        vivos, causando problemas que podem ser irreversíveis.
+                    </p>
+                </div>
+            </div>
+
+            <!--SECOND EARTH-->
+            <div class="earth_container">
+                <div id="earth_feliz" class="earth">
+                    <div class="earth_base" style="background-image: url(assets/sprites/earth/earth-extra-happy.png);">
+                    </div>
+                    <div class="earth_deco" style="background-image: url(assets/sprites/earth/earth-extra.png);"></div>
+                </div>
+                <div class="earth_info_div" style="text-align: center;">
+                    <h1 style="color: white;">
+                        <span style="color: #30ff30;">TERRA</span> FELIZ!
+                    </h1>
+                    <p style="color: white; position: relative; margin: 0 auto;">
+                        A produção que possui um respeito ao meio ambiente, não polui o solo, os rios e a atmosfera,
+                        consegue criar um equilíbrio entre a sustentabilidade da produção e o bem-estar do meio
+                        ambiente, gerando um espaço que favorece ambos os lados.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--SPACER DIV-->
+        <div style="height: 20px; width: 100%;"></div>
+    </section>
+
+    <!----------------------------->
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+
+    <!----------------------------->
+    <section id="agro"
+        style="background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 60px;border-radius: 3px; backdrop-filter: blur(4px);">
+
+        <!--TITLEZINHO-->
+        <div>
+            <h2 style="height: 40px ;font-size: clamp(0%, 15vw, 6rem); margin-top: -35px; color: rgb(56, 255, 60);">
+                AGRO
+            </h2>
+            <p class="sub-title"
+                style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 10px;">
+                A agricultura no Brasil é uma das principais fontes de renda do país, gerando a maior parte do lucro e
+                possuindo uma alta taxa de exportação para outros países, representando por volta de
+                <span style="color: #91ff00; font-weight: bold;">26%</span> a
+                <span style="color: #91ff00; font-weight: bold;">29%</span> do PIB
+                <span style="color: #91ff00;">(Produto Interno Bruto)</span> do país.
+            </p>
+            <p class="sub-title"
+                style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 10px;">
+                O Paraná é um estado altamente agrícola, sendo um dos maiores do país. Algumas das produções e
+                culturas produtivas do Paraná são:
+            </p>
+        </div>
+
+        <div class="content_divider"></div>
+
+        <!-- PRODUÇÃO PARANAENSE -->
+        <div style="width: 100%;">
+            <div>
+                <h1 style="font-size: clamp(0%, 10vw, 3rem); color: white;">CULTURAS</h1>
+                <h2 style="font-size: clamp(0%, 15vw, 4rem); margin-top: -35px; color: wheat;">AGRÍCOLAS</h2>
+            </div>
+
+            <!--CULTURAS-->
+            <div class="agro_cultures_div">
+                <!--SOJA-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/imagens/agro/agro-soja.jpg);"></div>
+                    <h1 class="agr_title">SOJA</h1>
+                    <h3 class="agr_percentage" style="--perc: 33.50">33,50%</h3>
+                </div>
+                <!--MILHO-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/imagens/agro/agro-milho.jpg);"></div>
+                    <h1 class="agr_title">MILHO</h1>
+                    <h3 class="agr_percentage" style="--perc: 4.51">4,51%</h3>
+                </div>
+                <!--TRIGO-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/imagens/agro/agro-trigo.jpg);"></div>
+                    <h1 class="agr_title">TRIGO</h1>
+                    <h3 class="agr_percentage" style="--perc: 2.58">2,58%</h3>
+                </div>
+                <!--CAFÉ-->
+                <div>
+                    <div class="img_b" style="background-image: url(assets/imagens/agro/agro-cafe.jpg);"></div>
+                    <h1 class="agr_title">CAFÉ</h1>
+                    <h3 class="agr_percentage" style="--perc: 0.9">0,1%</h3>
+                </div>
+            </div>
+        </div>
+        <!--SPACER DIV-->
+        <div style="height: 40px; width: 100%;"></div>
+    </section>
+
+    <!----------------------------->
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+
+    <!----------------------------->
+    <section id="futuro"
+        style="background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+
+        <!--TITLEZINHO-->
+        <div>
+            <h1 style="height: 40px ;font-size: clamp(0%, 11vw, 3rem); color: rgb(182, 244, 255);">FUTURO</h1>
+            <h2 style="height: 40px ;font-size: clamp(0%, 14.3vw, 3.8rem); margin-top: -35px; color: rgb(56, 255, 60);">
+                SUSTENTÁVEL
+            </h2>
+            <p class="sub-title"
+                style="font-size: clamp(1.2rem, 2.25vw, 2rem);color: white; width: 75%; margin: 0 auto; padding-bottom: 17px;">
+                Um futuro sustentável será alcançado no momento em que as ações que causam danos a natureza forem
+                substituídas por métodos que promovem um melhor equilíbrio entre a produção e o meio ambiente, como por
+                exemplo:
+            </p>
+        </div>
+
+        <div class="content_divider"></div>
+
+        <!--DIV GERAL-->
+        <div style="display: flex; align-items: center; justify-content: center;">
+
+            <!--!TODO = CARDS INTERATIVOS COM AS FORMAS DE TER UM FUTURO SUSTENTÁVEL-->
+            <!--!TODO = COLOCAR UMAS ARVOREZINHAS OU SEI LA O PLANETA FELIZINHO NA PARTE QUE TA MT VAZIA;-->
+            <!--!TODO = FAZER A LOGICA DO CLICK NO JS / QUANDO CLICAR VAI ABRIR UMA JANELINHA NA TELA INTEIRA COM AS INFOS;-->
+
+            <div style="height: 40px; width: 100%;"></div>
+
+            <div class="future_div">
+                <div id="future_1" class="item">
+                    <div class="img_b" style="background-image: url(assets/sprites/close-icon.png);"></div>
+                    <div class="mobile_icon only_mobile"></div>
+                </div>
+                <div id="future_2" class="item">
+                    <div class="img_b" style="background-image: url(assets/sprites/close-icon.png);"></div>
+                    <div class="mobile_icon only_mobile"></div>
+                </div>
+                <div id="future_3" class="item">
+                    <div class="img_b" style="background-image: url(assets/sprites/close-icon.png);"></div>
+                    <div class="mobile_icon only_mobile"></div>
+                </div>
+                <div id="future_4" class="item">
+                    <div class="img_b" style="background-image: url(assets/sprites/close-icon.png);"></div>
+                    <div class="mobile_icon only_mobile"></div>
+                </div>
+                <div id="future_5" class="item">
+                    <div class="img_b" style="background-image: url(assets/sprites/close-icon.png);"></div>
+                    <div class="mobile_icon only_mobile"></div>
+                </div>
+                <div id="future_6" class="item">
+                    <div class="img_b" style="background-image: url(assets/sprites/close-icon.png);"></div>
+                    <div class="mobile_icon only_mobile"></div>
+                </div>
+            </div>
+
+            <div style="height: 40px; width: 100%;"></div>
+        </div>
+
+        <!--SPACER DIV-->
+        <div style="height: 40px; width: 100%;"></div>
+    </section>
+
+    <!--DISPLAY-->
+    <div class="future_display" id="future_display"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;  z-index: 9999; visibility: hidden; display: flex; justify-content: center; align-items: center;">
+        <!--Blur fundo-->
+        <div
+            style="position: absolute;filter: blur(4px); background-color: rgba(0,0,0,0.5); width: 100%; height: 100%;">
+        </div>
+
+        <!--CLOSE BUTTON-->
+        <button id="future_close" class="future_close only_desktop future_closest_js">Fechar</button>
+
+        <!--ANTERIOR-->
+        <button id="future_last" class="future_positional_button only_desktop future_last"
+            style="margin-right: 5px;">◄</button>
+
+        <!--INFO DISPLAY-->
+        <div class="future_info_display" id="future_info_display">
+            <!--INFOMATIONS-->
+            <h1 class="future_title">
+                ...</h1>
+            <p class="future_desc">...</p>
+            <img class="future_img">
+            <img class="future_icon" src="assets/">
+
+            <!--MOBILE BUTTONS-->
+            <div class="only_mobile future_mobile_buttons"
+                style="position: absolute; width: 100%; height: 0px; bottom: 0; transform: translateY(5px);">
+                <!--LAST-->
+                <button id="future_last" class="future_positional_button_mobile future_last only_mobile"
+                    style="left: 5px;">◄</button>
+                <!--CLOSE BUTTON-->
+                <button id="future_close" class="future_close_mobile only_mobile future_closest_js">Fechar</button>
+                <!--NEXT-->
+                <button id="future_next" class="future_positional_button_mobile future_next only_mobile"
+                    style="right: 5px;">►</button>
+            </div>
+        </div>
+        <!--PROXIMO-->
+        <button id="future_next" class="future_positional_button only_desktop future_next"
+            style="margin-left: 5px;">►</button>
+    </div>
+
+    <!----------------------------->
+    <div
+        style="width: 100%; height: 40px; background-color: rgb(56, 255, 60); margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h2 class="top_down_pointer" style="top: -15px;">▼ ▼ ▼ ▼ ▼ ▼</h2>
+    </div>
+    <!----------------------------->
+
+    <!----------------------------->
+    <section id="creditos"
+        style="background-color: rgba(0,0,0,0.35); width: 100%; margin-top: 25px;border-radius: 3px; backdrop-filter: blur(4px);">
+        <h1
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: white; padding-top: 15px;">
+            CRÉDITOS</h1>
+
+        <h1
+            style="white-space: nowrap ;position: relative; margin: 0 auto;border-radius: 5px; text-align: center;background-color: rgba(0,0,0,0.35);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: white; padding-top: 15px;">
+            LUCAS DE LARA BIASI
+        </h1>
+        <p
+            style="color: white; font-size:large; white-space: nowrap ;position: relative; margin: 0 auto;border-radius: 5px; text-align: center;background-color: rgba(0,0,0,0.35);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: white; padding-top: 15px;">
+            COLÉGIO ESTADUAL CECÍLIA MEIRELES
+        </p>
+        <p style=" color: white; font-size: large; white-space: nowrap ;position: relative; margin: 0
+            auto;border-radius: 5px; text-align: center;background-color:
+            rgba(0,0,0,0.35);font-family: 'Franklin Gothic Medium' , 'Arial Narrow' , Arial, sans-serif; color: white;
+            padding-top: 15px;">
+            UBIRATÃ
+        </p>
+
+        <h2
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: white; padding-top: 15px;">
+            PROGRAMAS UTILIZADOS</h2>
+        <div style="width: 100%; padding-top: 5px; padding-bottom: 15px;" class="credits_programas">
+            <a href="https://code.visualstudio.com/">
+                <button class="credits_prog">
+                    <img src="assets/imagens/creditos/vs_code.png">
+                    <h3 style="color:  #007ACC;">VSCODE</h3>
+                    <p style="color: #ffffff;;">Programação</p>
+                </button>
+            </a>
+            <a href="https://www.blender.org/">
+                <button class="credits_prog">
+                    <img src="assets/imagens/creditos/blender.png">
+                    <h3 style="color: #EA7600;">BLENDER</h3>
+                    <p style="color: #ffffff;;">Ícones</p>
+                </button>
+            </a>
+            <a href="https://www.gimp.org/">
+                <button class="credits_prog">
+                    <img src="assets/imagens/creditos/gimp.png">
+                    <h3 style="color: #aeaeae;;">GIMP</h3>
+                    <p style="color: #ffffff;;">Edição</p>
+                </button>
+            </a>
+        </div>
     </section>
 
     <!-- JAVA SCRIPT LINKING -->
