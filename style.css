@@ -858,6 +858,8 @@ html {
 
         background-color: rgba(0, 0, 0, 0.15);
         border-radius: 6px;
+
+        padding-bottom: 15px;
     }
 
     .future_desc {
@@ -871,6 +873,7 @@ html {
 
         background-color: rgba(0, 0, 0, 0.05);
         border-radius: 3px;
+        padding-bottom: 15px;
     }
 
     .future_img {
@@ -1243,12 +1246,12 @@ html {
 
         .future_img {
             width: unset;
-            height: clamp(0%, 25vh, 17rem)
+            height: clamp(0%, 25vh, 17rem);
         }
 
         .future_icon {
             width: unset;
-            height: clamp(0%, 25vh, 17rem)
+            height: clamp(0%, 25vh, 17rem);
         }
     }
 
