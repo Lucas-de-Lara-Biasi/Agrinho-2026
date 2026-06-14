@@ -1,6 +1,8 @@
 
 ![logo](assets/imagens/main-logo.png)
 
+<img src="assets/imagens/main-logo.png" alt="logo" style="width: 100%; height: 150px">
+
 ---
 
 ### "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"
@@ -31,11 +33,11 @@ Utilizado para a criação dos ícones do site, todos eles foram "desenhados" em
 
 ---
 
-### Confira o site por este link! >
-https://lucas-de-lara-biasi.github.io/Agrinho-2026/
-
 Utilizado para a edição de imagens, principalmente o ajuste da logo do site.
 
 ---
 
-<img src="assets/sprites/earth/ico.png" alt="terrinha!" style="aspect-ratio:1/1; height: 150px">
+### Confira o site por este link! >
+https://lucas-de-lara-biasi.github.io/Agrinho-2026/
+
+<img src="assets/sprites/earth/ico.png" alt="terrinha!" style="aspect-ratio:1/1; height: 250px">
